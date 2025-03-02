@@ -9,22 +9,6 @@ function asignarTextoElemento(elemento, texto) {
     return;
 }
 
-function verificarIntento() {
-    let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
-    
-    if (numeroDeUsuario === numeroSecreto) {
-        asignarTextoElemento('p','Acertaste el número!');
-    } else {
-        if (numeroDeUsuario > numeroSecreto) {
-            asignarTextoElemento ('p', 'El número secreto es menor');
-        } else {
-            asignarTextoElemento ('p', 'El número secreto es mayor');
-        }
-    }
-    return;
-}
-
-
 function generarNumeroSecreto() {
     return Math.floor(Math.random()*10)+1;
 
